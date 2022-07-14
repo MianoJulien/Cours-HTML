@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Texte - Titre - H1</h1>
+      <p>
+        Texte basique, <em>Voici un texte en italique</em>.
+        <strong>Et un texte en gras</strong>.
+        <span>L'élément span ne reviens pas à la ligne</span>.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        dolorem pariatur mollitia voluptates, unde reprehenderit iure modi optio
+        molestiae culpa.
+      </p>
+    </header>
+    <section>
+      <div>
+        <h2>Images - Titre - H2</h2>
+        <img src="./lesCoquelicots.png" height="200" alt="Les coquelicots" />
+      </div>
+      <div>
+        <h3>Listes - Titre - H3</h3>
+        <ul>
+          <li>UL = unorder list</li>
+          <li>UL = unorder list</li>
+          <li>UL = unorder list</li>
+        </ul>
+        <ol>
+          <li>OL = order list</li>
+          <li>OL = order list</li>
+          <li>OL = order list</li>
+        </ol>
+      </div>
+      <div>
+        <h4>Tableaux - Titre - H4</h4>
+        <table border="1" width="50%">
+          <!-- Légende -->
+          <caption>
+            Populations d'europe
+          </caption>
+          <!-- En tête -->
+          <thead>
+            <tr>
+              <th>Pays</th>
+              <th>Population</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>France</td>
+              <td>66M</td>
+            </tr>
+            <tr>
+              <td>Allemagne</td>
+              <td>82M</td>
+            </tr>
+            <tr>
+              <td>Espagne</td>
+              <td>47M</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h5><span>&#9758;</span> Liens - Titre - H5</h5>
+        <a href="https://htmlcheatsheet.com" target="_blank"
+          >HTML Cheat Sheet</a
+        >
+        <br />
+        <a
+          href="https://www.toptal.com/designers/htmlarrows/symbols/"
+          target="_blank"
+          >Icones en html</a
+        >
+      </div>
+      <div>
+        <h6>Vidéo - Titre - H6</h6>
+        <video src="./Video.mp4" height="150" autoplay loop muted></video>
+      </div>
+    </section>
+    <br />
+    <section>
+      <h2>Formulaire</h2>
+      <form action="/action.php" method="post">
+        <label for="name">Nom </label>
+        <input id="name" type="text" placeholder="Entrez votre nom" /><br />
+        <label for="age">Age</label>
+        <input
+          id="age"
+          type="number"
+          min="0"
+          max="99"
+          step="1"
+          value="18"
+        /><br />
+        <!-- Input select -->
+        <label for="gender">Genre</label>
+        <select id="gender">
+          <option value="homme">Homme</option>
+          <option selected value="femme">Femme</option></select
+        ><br />
+        <!-- Input radio -->
+        <div>
+          <input type="radio" name="type" id="human" />
+          <label for="human">Humain</label>
+
+          <input type="radio" name="type" checked id="dog" />
+          <label for="dog">Chien</label>
+
+          <input type="radio" name="type" id="cat" />
+          <label for="cat">Chat</label>
+        </div>
+        <textarea
+          cols="30"
+          rows="10"
+          placeholder="Entrez votre demande ici"
+        ></textarea
+        ><br />
+        <!-- Input Checkbox -->
+        <label><input type="checkbox" />Accepter les CGV</label>
+        <input type="submit" value="Valider" />
+      </form>
+    </section>
+    <br />
+    <!-- Mail et envoie de fichier -->
+    <footer>
+      <a href="mailto:fs@gmail.com">Ecrivez-moi !</a><br />
+      <a href="notice.text" download="nom-du-fichier">Télécharger la notice</a>
+    </footer>
+  </body>
+</html>
